@@ -1,0 +1,16 @@
+{
+    "rctyping.genbank": [
+        "tests/data/genbank/GCF_018968045.1_ASM1896804v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_020229655.1_ASM2022965v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_003578725.1_ASM357872v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_015235475.1_ASM1523547v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_900458755.1_41665_D01_genomic.gbff.gz",
+        "tests/data/genbank/GCF_002732165.1_ASM273216v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_020224725.1_ASM2022472v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_021403025.1_ASM2140302v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_003578835.1_ASM357883v1_genomic.gbff.gz",
+        "tests/data/genbank/GCF_003578865.1_ASM357886v1_genomic.gbff.gz"
+    ],
+    "rctyping.rc_proteins": "tests/data/staphylococcus_xylosus.tar.gz",
+    "rctyping.species": "Staphylococcus xylosus"
+}
