@@ -6,7 +6,7 @@ task ribosomal_snakemake {
     File rc_proteins
     String species
     String docker="quay.io/theiagen/ribosomal-wdl:dev"
-    Int memory = 64
+    Int memory = 32
     Int cpu = 4
     Int disk_size = 50
   }
