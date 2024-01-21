@@ -83,7 +83,7 @@ Once found, enter the `tests` directory, then the `data` directory. In here you 
 
 ![image](https://github.com/jidc-trust/ribosomal-wdl/assets/5334269/a59b0dfd-6050-4526-b21c-594878df7373)
 
-THe `genbank` folder contains input GenBank files, and the `staphylococcus_xyulosus.tar.gz` contains
+The `genbank` folder contains input GenBank files, and the `staphylococcus_xyulosus.tar.gz` contains
 reference ribosomal proteins for RCTyping.
 
 First let's import the  `staphylococcus_xyulosus.tar.gz` file,by selecting it and cliking _Open".
@@ -94,6 +94,12 @@ in this directory and select _Open_.
 
 After you have imported all your data, your `tutorial` folder should look like this:
 ![image](https://github.com/jidc-trust/ribosomal-wdl/assets/5334269/6e346338-f084-4ad7-a1fb-5bae64ea6789)
+
+##### __IMPORTANT NOTE__ - GenBank must use valid extension
+
+Your input GenBank files must have one of the following extension: _'*.gbff', '*.gbff.gz', '*gbf', '*gbf.gz', '*.gbk', '*.gbk.gz', '*.gb', '*.gb.gz', '*.genbank', or '*.genbank.gz'_ 
+
+The tutorial files use a valid extension, but please keep this in might as you start processing your own data.
 
 #### Setup Workspace Data and Tutorial Table
 
@@ -269,6 +275,12 @@ For `ribosomal-wdl` you will need to provide a set of GenBank files from each of
 you would like to generate a tree from. These GenBank files can either be uncompressed or
 compressed using Gzip, and they must be one of the following extensions: `.gbff`, `.gbk`,
 `.gb`, or `.genbank`
+
+#### __IMPORTANT NOTE__ - GenBank must use valid extension
+
+Your input GenBank files must have one of the following extension: _'*.gbff', '*.gbff.gz', '*gbf', '*gbf.gz', '*.gbk', '*.gbk.gz', '*.gb', '*.gb.gz', '*.genbank', or '*.genbank.gz'_ 
+
+If one of these extensions is not utilized, the pipeline will not process your files.
 
 ### Ribosomal Proteins
 
