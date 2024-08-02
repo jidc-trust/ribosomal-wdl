@@ -4,4 +4,4 @@ workflows:
    subclass: WDL
    primaryDescriptorPath: /workflows/wf_rctyping.wdl
    testParameterFiles:
-    - empty.json
+    - /tests/inputs/empty.json
