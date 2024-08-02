@@ -9,9 +9,9 @@ WORKDIR /
 
 # Version arguments
 # ARG variables only persist during build time
-# using latest commit as of 2023/03/29, to include changes after release on 2021/06/29
-ARG RC_COMMIT="107c06217745f242b8043c7cc31eb1c254308972"
-ARG RC_SRC_URL=https://github.com/LCrossman/ribosomal_snakemake/archive/${RC_COMMIT}.zip
+# using latest commit as of 2024/08/01
+ARG RC_COMMIT="299bb2691f97f6a699ff550113830f6916731c84"
+ARG RC_SRC_URL=https://github.com/jidc-trust/ribosomal_snakemake/archive/${RC_COMMIT}.zip
 
 # metadata labels
 LABEL base.image="condaforge/miniforge3:23.3.1-1"
@@ -19,12 +19,10 @@ LABEL dockerfile.version="1"
 LABEL software="ribosomal-wdl"
 LABEL software.version=${RC_COMMIT}
 LABEL description="A WDL wrapper around LCrossman/ribosomal_snakemake for Terra.bio"
-LABEL website="https://github.com/LCrossman/ribosomal_snakemake"
+LABEL website="https://github.com/jidc-trust/ribosomal_snakemake"
 LABEL license="UNAVAILABLE"
-LABEL maintainer1="Robert A. Petit III"
-LABEL maintainer.email1="robert.petit@theiagen.com"
-LABEL maintainer2="Andrew J. Page"
-LABEL maintainer.email2="andrew.page@theiagen.com"
+LABEL maintainer1="Andrew J. Page"
+LABEL maintainer.email1="andrew.page@theiagen.com"
 
 # install Snakemake dependencies; cleanup apt garbage
 RUN apt-get update && apt-get install -y --no-install-recommends \

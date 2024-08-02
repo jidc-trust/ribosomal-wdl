@@ -429,3 +429,14 @@ After successfully running `ribosomal-wdl` you will have the following outputs:
 | rctype_concatenated_ribosomal_proteins_db.fasta_2 |  |
 | rctype_extracted.fasta                            |  |
 | rctype_.updateriboprot.fastadedupe.fasta          |  |
+
+
+## Updating container
+Change the commit that the container is built from in the `Dockerfile` and then run the following command to build the container and push to the artifact repository:
+
+```
+docker build  -t ribosomal-wdl:1.0.0 .
+docker tag ribosomal-wdl:1.0.0 us-central1-docker.pkg.dev/general-theiagen/jidc-trust/ribosomal-wdl:1.0.0
+docker push us-central1-docker.pkg.dev/general-theiagen/jidc-trust/ribosomal-wdl:1.0.0
+```
+
