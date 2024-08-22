@@ -5,7 +5,7 @@ task ribosomal_snakemake {
     Array[File] genbank
     File rc_proteins
     String species
-    String docker="us-central1-docker.pkg.dev/general-theiagen/jidc-trust/ribosomal-wdl:1.0.0"
+    String docker="us-docker.pkg.dev/general-theiagen/internal/ribosomal-wdl:299bb2"
     Int memory = 32
     Int cpu = 4
     Int disk_size = 50
@@ -58,7 +58,7 @@ task ribosomal_snakemake {
     File rctype_fasta = "rctype_.updateriboprot.fasta"
     File rctype_deduped_fasta = "rctype_.updateriboprot.fastadedupe.fasta"
     File rctype_aln = "rctype_.updateriboprotdedupe.aln"
-    File rctype_treefile = "rctype_.updateriboprotdedupe.aln.treefile"
+    File? rctype_treefile = "rctype_.updateriboprotdedupe.aln.treefile"
     File rctype_proteins_fasta = "rctype_concatenated_ribosomal_proteins_db.fasta"
     File rctype_proteins_fasta2 = "rctype_concatenated_ribosomal_proteins_db.fasta_2"
     File rctype_extracted_fasta = "rctype_extracted.fasta"
