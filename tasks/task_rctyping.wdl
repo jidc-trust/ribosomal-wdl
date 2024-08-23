@@ -58,7 +58,7 @@ task ribosomal_snakemake {
     File rctype_fasta = "rctype_.updateriboprot.fasta"
     File rctype_deduped_fasta = "rctype_.updateriboprot.fastadedupe.fasta"
     File rctype_aln = "rctype_.updateriboprotdedupe.aln"
-    File? rctype_treefile = "rctype_.updateriboprotdedupe.aln.treefile"
+    File rctype_treefile = "rctype_.updateriboprotdedupe_trimmed.aln.log"
     File rctype_proteins_fasta = "rctype_concatenated_ribosomal_proteins_db.fasta"
     File rctype_proteins_fasta2 = "rctype_concatenated_ribosomal_proteins_db.fasta_2"
     File rctype_extracted_fasta = "rctype_extracted.fasta"

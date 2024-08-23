@@ -23,7 +23,6 @@ workflow rctyping {
     File rctype_fasta = rc_snakemake.rctype_fasta
     File rctype_deduped_fasta = rc_snakemake.rctype_deduped_fasta
     File rctype_aln = rc_snakemake.rctype_aln
-    File? rctype_treefile = rc_snakemake.rctype_treefile
     File rctype_proteins_fasta = rc_snakemake.rctype_proteins_fasta
     File rctype_proteins_fasta2 = rc_snakemake.rctype_proteins_fasta2
     File rctype_extracted_fasta = rc_snakemake.rctype_extracted_fasta
