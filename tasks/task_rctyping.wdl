@@ -5,7 +5,7 @@ task ribosomal_snakemake {
     Array[File] genbank
     File rc_proteins
     String species
-    String docker = "us-docker.pkg.dev/general-theiagen/internal/ribosomal-wdl:299bb2"
+    String docker = "us-central1-docker.pkg.dev/general-theiagen/jidc-trust/ribosomal-wdl:1.1.0"
     Int memory = 32
     Int cpu = 4
     Int disk_size = 50
