@@ -44,7 +44,7 @@ RUN wget --quiet "${RC_SRC_URL}" && \
     unzip ${RC_COMMIT}.zip && \
     rm ${RC_COMMIT}.zip && \
     mv -v ribosomal_snakemake-${RC_COMMIT} /ribosomal_snakemake && \
-    mamba create --name ribosomal_snakemake -c conda-forge -c bioconda \
+    mamba create -y --name ribosomal_snakemake -c conda-forge -c bioconda \
         'snakemake>=3.5' \
         'python==3.11' \
         'biopython>=1.77' \
@@ -53,7 +53,8 @@ RUN wget --quiet "${RC_SRC_URL}" && \
         'mafft>=7.429' \
         'fasttree>=2.1.10' \
         'iqtree>=1.6.11' \
-        'ncbi-genome-download>=0.3.0' && \
+        'ncbi-genome-download>=0.3.0' \
+        'trimal>=1.5.0' && \
     mamba clean -a -y
 
 # set locale settings to UTF-8
