@@ -6,9 +6,9 @@ task ribosomal_snakemake {
     File rc_proteins
     String species
     String docker = "us-central1-docker.pkg.dev/general-theiagen/jidc-trust/ribosomal-wdl:1.1.0"
-    Int memory = 64
-    Int cpu = 8
-    Int disk_size = 1000
+    Int memory = 32
+    Int cpu = 4
+    Int disk_size = 50
   }
   command <<<
     date | tee DATE
